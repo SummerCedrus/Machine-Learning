@@ -20,7 +20,6 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 h = sigmoid(X*theta)
-num_iters = size(theta)
 J = (-y'*log(h)-(ones(m,1)-y)'*log(ones(m,1)-h))/m
 grad = X'*(h-y)/m
 
